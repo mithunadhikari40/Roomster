@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/full_list_layout"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/room_flat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room/flat:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_room_flat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/room_flat"
+        android:text="room-flat"
+
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_flat"
+            android:text="No of"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_flat"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@+id/district"
+            android:text="no of rooms"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no"
+        android:text="District:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no"
+        android:layout_toRightOf="@+id/district"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/district"
+        android:text="City:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/district"
+        android:layout_toRightOf="@+id/city"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:text="Price:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_toRightOf="@+id/price"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:text="Contact:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_toRightOf="@+id/contact"
+        android:text="room-flat"
+        android:textColor="#00f"
+        android:clickable="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:text="Description:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_toRightOf="@+id/desc"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_desc"
+        android:text="Uploaded date:\t"
+        android:textColor="#000"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_desc"
+        android:layout_toRightOf="@+id/date"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date"
+        android:layout_toRightOf="@+id/date"
+        android:text="room-flat"
+        android:visibility="gone"
+        android:textColor="#000"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_toRightOf="@+id/date"
+        android:text="room-flat"
+        android:visibility="gone"
+        android:textColor="#000"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_toRightOf="@+id/date"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/image4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_toRightOf="@+id/date"
+        android:text="room-flat"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/first_image"
+        android:scaleType="fitXY"
+        android:layout_width="170dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/second_image"
+        android:layout_width="170dp"
+        android:scaleType="fitXY"
+        android:layout_height="165dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/first_image" />
+
+    <ImageView
+        android:id="@+id/third_image"
+        android:scaleType="fitXY"
+        android:layout_width="170dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/first_image"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginRight="10dp"
+        android:id="@+id/fourth_image"
+        android:layout_width="170dp"
+        android:layout_height="165dp"
+        android:layout_below="@+id/first_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/third_image" />
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="-10dp"
+            android:id="@+id/full_list_view_image"
+            android:layout_marginStart="150dp"
+            android:src="@drawable/bubble"
+            android:contentDescription="Tap to call"
+             />
+        <TextView
+            android:id="@+id/hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/full_list_view_image"
+            android:layout_alignTop="@+id/full_list_view_image"
+            android:layout_alignRight="@+id/full_list_view_image"
+            android:layout_alignBottom="@+id/full_list_view_image"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="                  Click to call
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+         \n\t\t\t\t\t\t\t\t
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; tap to dismiss"
+            android:textColor="#000000" />
+    </RelativeLayout>
+</ScrollView>

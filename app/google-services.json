@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "76678231402",
+    "firebase_url": "https://roomster-9d0bd.firebaseio.com",
+    "project_id": "roomster-9d0bd",
+    "storage_bucket": "roomster-9d0bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76678231402:android:b3917b627887b0a2",
+        "android_client_info": {
+          "package_name": "np.com.mithunadhikari.roomster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76678231402-3gs0e79erhqa9r2dso2qpg82r7ejsp5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "np.com.mithunadhikari.roomster",
+            "certificate_hash": "af8226a8ace136606174461972a9bab24c223172"
+          }
+        },
+        {
+          "client_id": "76678231402-8jdumk3o0do9e8bum4qbcm5t8i13f3gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYSPAToDyyCh0ovwUNDfWdGRYJCTax3Po"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76678231402-8jdumk3o0do9e8bum4qbcm5t8i13f3gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

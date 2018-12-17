@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d9ca"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+-->
+
+        <TextView
+            android:id="@+id/room_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room/flat:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_room_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/room_flat"
+            android:text="room-flat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_flat"
+            android:text="No:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_flat"
+            android:layout_toRightOf="@+id/no"
+            android:layout_marginStart="20dp"
+            android:text="45"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no"
+            android:text="District:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no"
+            android:layout_toRightOf="@+id/district"
+            android:text="room-flat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/district"
+            android:text="City:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/district"
+            android:layout_toRightOf="@+id/city"
+            android:text="room-flat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:text="Price:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_toRightOf="@+id/price"
+            android:text="room-flat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:text="Contact:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_toRightOf="@+id/contact"
+            android:text="room-flat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact"
+            android:text="Description:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contact"
+            android:layout_toRightOf="@+id/desc"
+            android:text="room-flat"
+
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_desc"
+            android:text="Uploaded date:\t"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_desc"
+            android:layout_toRightOf="@+id/date"
+            android:text="room-flat"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/image__1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_date"
+
+            android:text="image1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/image__2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image__1"
+
+            android:text="image1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/image__3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image__2"
+            android:text="image1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/image__4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image__3"
+            android:text="image1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/emailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image__4"
+            android:text="image1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailAddress"
+            android:text="image1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!-- <Button
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:id="@+id/btn_like"
+             android:layout_below="@id/txt_date"
+             android:padding="10dp"
+             android:layout_margin="10dp"
+             android:background="@drawable/right_mark"
+             android:layout_alignParentEnd="true"/>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/txt_date"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_date"
+            android:layout_marginTop="15dp"
+            android:text="3200"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/like_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_date"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/like_count"
+            android:clickable="true"
+            android:text="Like"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dislike_count"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_date"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/like_text"
+            android:text="3200"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dislike_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_date"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/dislike_count"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="Dislike"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/like_by"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_date"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/dislike_count"
+            android:text="Dislike"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dislike_by"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_date"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/dislike_count"
+            android:text="Dislike"
+            android:textSize="18sp"
+            android:visibility="gone" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dislike_by"
+            android:layout_marginTop="15dp"
+            android:id="@+id/show_more"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/list_view_image"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/bubble"
+        android:contentDescription="Tap to see full story" />
+    <TextView
+        android:id="@+id/hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list_view_image"
+        android:layout_alignTop="@+id/list_view_image"
+        android:layout_alignRight="@+id/list_view_image"
+        android:layout_alignBottom="@+id/list_view_image"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="                  Click to view
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;full story
+         \n\t\t\t\t\t\t\t\t
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; tap to dismiss"
+        android:textColor="#000000" />
+
+   <!-- </RelativeLayout>-->
+
+</RelativeLayout>

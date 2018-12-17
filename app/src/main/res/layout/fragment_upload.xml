@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/upload_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d9ca">
+
+
+    <RadioButton
+        android:id="@+id/radio_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomster_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="Room" />
+
+    <RadioButton
+        android:id="@+id/radio_flat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="22dp"
+        android:text="Flat" />
+
+    <EditText
+        android:id="@+id/no_of"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:hint="No of rooms/flats"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/radio_flat"
+        android:textColor="#00f" />
+
+
+    <Spinner
+        android:id="@+id/address_dist_upload"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radio_room"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#00f" />
+
+    <AutoCompleteTextView
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:id="@+id/address_city_upload"
+        android:layout_below="@+id/radio_room"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:maxLength="50"
+        android:layout_toEndOf="@+id/address_dist_upload"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/address_city_upload"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Price: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0000ff" />
+
+    <EditText
+        android:id="@+id/upload_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/address_city_upload"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="Enter rent in Nrs."
+        android:inputType="number"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/upload_rate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Contact no: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0000ff" />
+
+    <EditText
+        android:id="@+id/upload_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/upload_rate"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="Enter contact number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/upload_contact"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Description:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0000ff" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/upload_contact"
+
+        android:layout_marginTop="260dp"
+        android:layout_toEndOf="@+id/radio_room"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/upload_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:hint="Enter description like
+The exact location
+What type of customers you expect
+Price negotiable or not
+Things that describes the place etc."
+            android:maxLength="1000"
+            android:maxLines="30"
+            android:scrollbars="horizontal"
+            android:textColor="#000000" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/selectImageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upload_contact"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Select images to upload. Maxium of 4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#00f" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="475dp"
+        android:background="#d9ddfe"
+        android:clickable="true"
+        android:onClick="onUpload"
+        android:text="Upload"
+        android:textAllCaps="false"
+        android:textColor="#0000ff" />
+
+    <TextView
+        android:id="@+id/image1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectImageText"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:text="Image1"
+        android:textAllCaps="false"
+        android:textColor="#0000ff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/image2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectImageText"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image1"
+        android:clickable="true"
+        android:text="Image2"
+
+        android:textAllCaps="false"
+        android:textColor="#0000ff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/image3"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectImageText"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image2"
+        android:clickable="true"
+        android:text="Image3"
+        android:textAllCaps="false"
+        android:textColor="#0000ff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/image4"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectImageText"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image3"
+        android:clickable="true"
+        android:text="Image4"
+        android:textAllCaps="false"
+        android:textColor="#0000ff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="430dp"
+        android:layout_toRightOf="@+id/upload_button"
+        android:text="Hello World"
+        android:textColor="#000"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
